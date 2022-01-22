@@ -41,7 +41,3 @@ else:
         print("1 instance of " + char + " found in " + word)
     else:
         print(str(num) + " instances of " + char + " found in " + word)
-
-
-
-
