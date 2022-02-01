@@ -1,4 +1,4 @@
-"""ex02_one_shot_wordle.py""" 
+"""ex02_one_shot_wordle.py"""
 
 __author__ = "730528622"
 
@@ -36,6 +36,6 @@ while i < len(secret):
 print(emoji)
 
 if inp == secret:
-    print(f"Woo! You got it!")
+    print("Woo! You got it!")
 else:
-    print(f"Not quite. Play again soon!")
+    print("Not quite. Play again soon!")
