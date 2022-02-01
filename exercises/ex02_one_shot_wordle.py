@@ -1,4 +1,4 @@
-"""ex02_one_shot_wordle.py"""
+"""ex02_one_shot_wordle."""
 
 __author__ = "730528622"
 
