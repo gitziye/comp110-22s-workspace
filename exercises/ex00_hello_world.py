@@ -6,3 +6,5 @@ print("^")
 print("aaaaaa")
 print("oh, this is really a \"cool guy\"")
 
+
+print(hex(F))

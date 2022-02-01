@@ -1,4 +1,4 @@
-"""ex02_one_shot_wordle.py"""
+"""ex02_one_shot_wordle.py""" 
 
 __author__ = "730528622"
 
@@ -17,7 +17,7 @@ i = 0
 emoji = ""
 while i < len(secret):
     if inp[i] == secret[i]:
-        emoji = emoji+GREEN_BOX
+        emoji = emoji + GREEN_BOX
         
     else: 
         # if not consistent, here to determine whether this is yellow or white
@@ -28,9 +28,9 @@ while i < len(secret):
                 times += 1     
             j += 1
         if times == 0:
-            emoji = emoji+WHITE_BOX
+            emoji = emoji + WHITE_BOX
         else:
-            emoji = emoji+YELLOW_BOX
+            emoji = emoji + YELLOW_BOX
     i += 1
 
 print(emoji)
