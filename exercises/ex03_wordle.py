@@ -52,7 +52,7 @@ def input_guess(c: int):
 
 def main() -> None:
     """The entrypoint of the program and main game loop."""
-    code = "python"
+    code = "codes"
     i = 0
     while i < 6:
         print(f"=== Turn {i+1}/6 ===")
