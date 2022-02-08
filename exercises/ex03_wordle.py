@@ -41,12 +41,11 @@ def emojified(guess: str, secret: str) -> str:
     return emoji
 
 
-def input_guess(c: int):
+def input_guess(c: int) -> str:
     "enter the guess with correct length"
     gue = input(f"Enter a  {c}  character word: ")
     while len(gue) != c:
         gue = input(f"That wasn't {c} chars! Try again: ")
-    
     return gue
 
 
