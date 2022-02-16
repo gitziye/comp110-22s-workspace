@@ -1,21 +1,17 @@
 from turtle import Turtle, colormode, done
-leo: Turtle = Turtle()
 bob: Turtle = Turtle()
 
+bob.color("black")
+bob.penup()
+bob.goto(45, 60)
+bob.pendown()
 
-leo.penup()
-leo.goto(0, 30)
-leo.pendown()
-leo.fillcolor("grey")
-leo.begin_fill()
+bob.speed(200)
+
 i: int = 0
 while (i < 3):
-    leo.forward(300)
-    leo.left(120)
+    bob.forward(300)
+    bob.left(120)
     i = i + 1
-leo.end_fill()
-
-bob: Turtle = Turtle()
-bob.forward(100)
 
 done()
