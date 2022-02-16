@@ -14,12 +14,13 @@ while (i < 3):
     bob.left(120)
     i = i + 1
 
-side_length: int = 300
+side_length = 300
 
 i: int = 0
-while (i < 3):
+while (i < 200):
     bob.forward(side_length)
-    bob.left(120)
+    bob.left(122)
     i = i + 1
+    side_length = side_length * 0.98
 
 done()
