@@ -1,12 +1,10 @@
-"""exercise 3 structured wordle"""
+"""Exercise 3 structured wordle.""" 
 
 __author__ = "730528622"
 
-import code
-
 
 def contains_char(a: str, b: str) -> bool:
-    "check if the first argument contains the second argument"
+    """Check if the first argument contains the second argument."""
     assert len(b) == 1
     i = 0
     count = 0
@@ -20,7 +18,7 @@ def contains_char(a: str, b: str) -> bool:
 
 
 def emojified(guess: str, secret: str) -> str:
-    "compare two strings and output the emoji block"
+    """Compare two strings and output the emoji block."""
     assert len(guess) == len(secret)
 
     WHITE_BOX: str = "\U00002B1C"
@@ -42,8 +40,8 @@ def emojified(guess: str, secret: str) -> str:
 
 
 def input_guess(c: int) -> str:
-    "enter the guess with correct length"
-    gue = input(f"Enter a  {c}  character word: ")
+    """Enter the guess with correct length."""
+    gue = input(f"Enter a {c} character word: ")
     while len(gue) != c:
         gue = input(f"That wasn't {c} chars! Try again: ")
     return gue
@@ -64,8 +62,8 @@ def main() -> None:
         else:
             i += 1
     if i == 6:
-         print(f"{i}/6 - Sorry, try again tomorrow!")
-    return   
+        print(f"{i}/6 - Sorry, try again tomorrow!")
+
 
 if __name__ == "__main__":
     main()
