@@ -28,8 +28,8 @@ def main() -> None:
         mountain_y += 60
         j += 1
     mysterious_celetial_body(picture, 200, 0, 100)
-
     done()
+    return
 
 
 def tree(a_turtle: Turtle, x: float, y: float, width: float, height: float) -> None:
@@ -42,14 +42,15 @@ def tree(a_turtle: Turtle, x: float, y: float, width: float, height: float) -> N
     a_turtle.color("green")
     a_turtle.begin_fill()
     while i < 4:
-        if i%2 == 0:
+        if i % 2 == 0:
             a_turtle.forward(width)
         else:
             a_turtle.forward(height)
         a_turtle.left(90)
         i = i + 1
     a_turtle.end_fill()
-    leafage(a_turtle, x-width*(1/2), y+height, width*2)
+    leafage(a_turtle, x-width * (1/2), y + height, width * 2)
+    return
     
         
 def leafage(a_turtle: Turtle, x: float, y: float, width: float) -> None:
@@ -80,7 +81,7 @@ def mountain(a_turtle: Turtle, x: float, y: float, length: float) -> None:
     i: int = 0
     while i < 6:
         a_turtle.forward(length)
-        if i%2 == 0:
+        if i % 2 == 0:
             a_turtle.right(90)
         else:
             a_turtle.left(90)
@@ -89,7 +90,7 @@ def mountain(a_turtle: Turtle, x: float, y: float, length: float) -> None:
     
 
 def sun(a_turtle: Turtle, x: float, y: float, radius: float) -> None:
-    """draw a big shining sun"""
+    """Draw a big shining sun."""
     a_turtle.penup()
     a_turtle.goto(x, y) 
     a_turtle.pendown()
@@ -102,11 +103,11 @@ def sun(a_turtle: Turtle, x: float, y: float, radius: float) -> None:
 
 
 def mysterious_celetial_body(a_turtle: Turtle, x: float, y: float, mysterious_length: float) -> None:
-    """According to a recent scientific report, researchers have recently discovered a mysterious planet at a distance of 0.8 billion
-    kilometers from the Sun. The planet is glowing red and rotates in a triangular trajectory. The planet is now moving toward Earth 
-    at a high speed and scientists expect it to hit the planet in a month. As the two planets get closer, humans can gradually see 
-    the planet's outline faintly on the Earth's surface. Scientists say the only way so far to get the planet to deviate from its 
-    motion is to get a full mark score on my comp110 exercise assignment."""
+    """According to a recent scientific report, researchers have recently discovered a mysterious planet at a distance of 0.8 billion."""
+    """Kilometers from the Sun. The planet is glowing red and rotates in a triangular trajectory. The planet is now moving toward Earth."""
+    """At a high speed and scientists expect it to hit the planet in a month. As the two planets get closer, humans can gradually see."""
+    """The planet's outline faintly on the Earth's surface. Scientists say the only way so far to get the planet to deviate from its."""
+    """Motion is to get a full mark score on my comp110 exercise assignment."""
     i: int = 0
     a_turtle.color("red")
     a_turtle.penup()
