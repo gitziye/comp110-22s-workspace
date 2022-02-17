@@ -49,7 +49,7 @@ def tree(a_turtle: Turtle, x: float, y: float, width: float, height: float) -> N
         a_turtle.left(90)
         i = i + 1
     a_turtle.end_fill()
-    leafage(a_turtle, x-width * (1/2), y + height, width * 2)
+    leafage(a_turtle, x - width * (1/2), y + height, width * 2)
     return
     
         
@@ -113,11 +113,11 @@ def mysterious_celetial_body(a_turtle: Turtle, x: float, y: float, mysterious_le
     a_turtle.penup()
     a_turtle.goto(x, y) 
     a_turtle.pendown()
-    degree = 120
+    degree: float = 120
     while (i < 100):
         a_turtle.forward(mysterious_length)
         a_turtle.left(degree)
-        degree += 0.1
+        degree += 1
         i += 1
         mysterious_length = mysterious_length * 0.97
     return
