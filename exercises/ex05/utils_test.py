@@ -25,4 +25,3 @@ def test_concat() -> None:
     assert concat([1, 2, 3, 4, 5], [6, 7, 8, 9]) == [1, 2, 3, 4, 5, 6, 7, 8, 9]
     assert concat([8, 5, 2, 6], [7, 1, 0, 9]) == [8, 5, 2, 6, 7, 1, 0, 9]
     assert concat([], []) == []
-

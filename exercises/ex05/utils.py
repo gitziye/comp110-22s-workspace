@@ -32,4 +32,3 @@ def concat(listing1: list[int], listing2: list[int]) -> list[int]:
     for i in listing2:
         listing3.append(i)
     return listing3
-
