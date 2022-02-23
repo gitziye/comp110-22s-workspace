@@ -17,7 +17,7 @@ def sub(listing: list[int], a: int, b: int) -> list[int]:
     listing2: list[int] = list()
     if a < 0:
         a = 0
-    if b > len(listing)-1:
+    if b > len(listing) - 1:
         b = len(listing)
     
     while a < b:
@@ -32,6 +32,4 @@ def concat(listing1: list[int], listing2: list[int]) -> list[int]:
     for i in listing2:
         listing3.append(i)
     return listing3
-
-
 
